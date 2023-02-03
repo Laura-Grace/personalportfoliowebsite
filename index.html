@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Laura Cook</title>
+        <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+</style>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+</style>
+    </head>
+    <body class="index">
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href=index.html>Home</a></li>
+                <li><a href=aboutme.html>About Me</a></li>
+                <li><a href=graphicdesign.html> Graphic Design</a></li>
+                <li><a  href=cssart.html>CSS Art</a></li> 
+                <li><a href=certification.html>Certification</a></li> 
+                <li><a href=contact.html>Contact Me</a></li>            
+            </ul>
+        </nav>
+    </header>
+    
+            <div class="homeintro">
+                <h3>Laura Cook</h3>
+                
+                <h6>Welcome to my website</h6>
+                
+                <p>I am treating this website much the same as a personal portfolio. The first thing you should know is that I have coded this website from scratch myself using HTML, CSS and JavaScript. Why is this impressive? Because, less than a year ago I was primary school teacher who had never coded in her life. The second thing you should know: I take great pride in my ability to grow and adapt. I am willing and able to push myself consistently; I already feel as though both my graphic design and coding skills are a testament to my hard-working nature. I hope you do too.</p>
+            </div>
+            <div class="homepic">
+                <img id="hi" src="file:///C:/Users/laura/OneDrive/Pictures/Saved%20Pictures/Personal/Intro-picture.gif" alt="Laura Cook">
+            </div>
+            <input type="button" id="homebtn" onclick="changeImage()" value="Change" />
+            <script>
+                function changeImage() {
+                    var image = document.getElementById('hi');
+                    if (image.src.match("file:///C:/Users/laura/OneDrive/Pictures/Saved%20Pictures/Personal/Intro-picture.gif")) {
+                        image.src = "file:///C:/Users/laura/OneDrive/Documents/Coding/Projects/Codecademy/Personal%20portfolio%20website/aboutmeimg.gif";
+                    }
+                    else {
+                        image.src = "file:///C:/Users/laura/OneDrive/Pictures/Saved%20Pictures/Personal/Intro-picture.gif";
+                    }
+                }
+            </script>
+        
+    </body>
+</html>
